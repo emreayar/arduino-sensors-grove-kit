@@ -45,8 +45,8 @@ void loop() {
   }
 
   lastButtonState = buttonState;
-  delay(25);
-  switch (buttonCounter%3) {
+  delay(25); //to reduce the renewal of the lcd screen and to prevent too much analog signal entry 
+  switch (buttonCounter%3) { //for using to work continuously
     case 0:
 
       lightValue = analogRead(lightPin);
